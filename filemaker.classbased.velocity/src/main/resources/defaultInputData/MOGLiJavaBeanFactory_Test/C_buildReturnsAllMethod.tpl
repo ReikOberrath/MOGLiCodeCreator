@@ -56,25 +56,14 @@
 					
 						'		assertEquals("$AttributeName of type $javaType", "$testDataMetaInfoValue", last${classDescriptor.simpleName}.get${AttributeName}() );
 						
-<<<<<<< HEAD
-					#elseif ( $javaType == "java.math.BigDecimal" )
-					
-							'		assertEquals("$AttributeName of type $javaType", "$testDataMetaInfoValue", last${classDescriptor.simpleName}.get${AttributeName}().toPlainString() );
-=======
 					#elseif ( $javaType == "java.math.BigDecimal" ||  $javaType == "BigDecimal" )
 					
 						'		assertEquals("$AttributeName of type $javaType", "$testDataMetaInfoValue", last${classDescriptor.simpleName}.get${AttributeName}().toPlainString() );
->>>>>>> 656c84c58ad794ed34c58c30ecc9bf656c921412
 													
 					#elseif ( $TemplateJavaUtility.isPrimitiveTypeWrapper($javaType) )
 		
 						'		assertEquals("$AttributeName of type $javaType", "$testDataMetaInfoValue", "" + last${classDescriptor.simpleName}.get${AttributeName}() );
 									
-<<<<<<< HEAD
-					#else
-					
-							'		assertEquals("$AttributeName of type $javaType", "$testDataMetaInfoValue", last${classDescriptor.simpleName}.get${AttributeName}() );
-=======
 					#elseif ( $javaType == "org.joda.time.DateTime" || $javaType == "DateTime" )
 				
 						'		assertEquals("$AttributeName of type $javaType", dateTimeFormatter.parseDateTime( "$testDataMetaInfoValue" ), last${classDescriptor.simpleName}.get${AttributeName}() );
@@ -82,7 +71,6 @@
 					#else
 					
 						'		assertEquals("$AttributeName of type $javaType", "$testDataMetaInfoValue", last${classDescriptor.simpleName}.get${AttributeName}() );
->>>>>>> 656c84c58ad794ed34c58c30ecc9bf656c921412
 				
 					#end			
 					 

@@ -1,14 +1,11 @@
 package com.iksgmbh.moglicc.intest.filemaker.classbased.velocity;
 
-import static org.junit.Assert.fail;
-
 import java.io.File;
 import java.io.IOException;
 
 import org.junit.Test;
 
 import com.iksgmbh.moglicc.MOGLiSystemConstants;
-import com.iksgmbh.moglicc.ReportWriter;
 import com.iksgmbh.moglicc.core.InfrastructureService;
 import com.iksgmbh.moglicc.exceptions.MOGLiPluginException;
 import com.iksgmbh.moglicc.intest.IntTestParent;
@@ -346,6 +343,23 @@ public class VelocityClassBasedFileMakerIntTest extends IntTestParent {
 
 		// verify test result
 		assertFileDoesNotExist(resultFile);
+	}
+
+	@Test
+	public void createsMemberClassImplementingCloneableAndSerializable() throws Exception {
+		// prepare test
+		standardModelProviderStarter.doYourJob();
+
+		// call functionality under test
+		velocityClassBasedFileMakerStarter.doYourJob();
+
+		// verified if no exception was thrown
+		final File result = new File(velocityClassBasedFileMakerStarter.getInfrastructure().getPluginOutputDir()
+				                     + "/MOGLiJavaBean", "Member.java");
+		assertFileExists(result);
+		assertFileContainsEntry(result, "implements Serializable, Cloneable");
+		assertFileContainsEntry(result, "private static final long serialVersionUID = ");
+		assertFileContainsEntry(result, "public Object clone()");
 	}
 	
 }

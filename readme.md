@@ -35,13 +35,11 @@ License: **All Rights Reserved**
 
 travis-ci: [![Build Status](https://travis-ci.org/iks-github/MOGLiCodeCreator.png?branch=master)](https://travis-ci.org/iks-github/MOGLiCodeCreator)
 
-<<<<<<< HEAD
-Current version: **1.5.0**
+Current version: **1.5.2**
 
-**Changes to 1.4.0**
-- New Feature: New Plugin 'provider.model.standard.excel' for reading test data from excel files
-=======
-Current version: **1.5.1**
+**Changes to 1.5.1**
+- Bugfix: MOGLiCC JavaBean Group now supports to configure an arbitrary namespace
+- Bugfix: MOGLiCC JavaBean Group now handles "implements" metainfos correct
 
 **Changes to 1.5.0**
 - Bugfix: Provider report now with validation error messages (if occurred)
@@ -50,7 +48,6 @@ Current version: **1.5.1**
 **Changes to 1.4.0**
 - New Feature: New Plugin 'provider.model.standard.excel' for reading test data from excel files
 - New Feature: New artefact type in the MOGLiCC JavaBean Group: Factory classes to generate instances of domain classes containing test data
->>>>>>> 656c84c58ad794ed34c58c30ecc9bf656c921412
 - Portability: Also running von Mac OS and Ubuntu.
 - A number of smaller improvements (see milestone 1.5.0 https://github.com/iks-github/MOGLiCodeCreator/issues)
 
@@ -88,6 +85,8 @@ Current version: **1.5.1**
 - New model file 'MOGLiCC-Plugin' added to the StandardModelProvider
 - New artefact 'MOGLiCC-Plugin" added to the VelocityClassBasedGenerator 
 
+**Changes to 1.0.0**
+- empty output file bug fixed
 
 * * *
 

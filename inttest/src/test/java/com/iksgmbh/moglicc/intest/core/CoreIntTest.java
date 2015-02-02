@@ -43,20 +43,9 @@ public class CoreIntTest extends IntTestParent {
 		// prepare test
 		initTestRootDir();
 		
-		//copyExternalInputDataIntoMOGLiCCWorkspace("C:\\dev\\sources\\ctlbignet2boni\\src\\test\\resources\\MOGLiCodeCreator");
-		//copyExternalInputDataIntoMOGLiCCWorkspace("C://dev//sources//ctlcrmoglicc//work//workspaces//ctlFluxJob");
-		//copyExternalInputDataIntoMOGLiCCWorkspace("C:\\dev\\sources\\ctlbignet2boni\\src\\test\\resources\\MOGLiCodeCreator");
-<<<<<<< HEAD
-		copyExternalInputDataIntoMOGLiCCWorkspace("/home/localci/development/sources/ReikOberrath_Master_final/application/target/releaseDir/SystemTestDir");
-		                                           
-		//copyExternalInputDataIntoMOGLiCCWorkspace("C://dev//MOGLiCC//ReikOberrath_Master//application//target//releaseDir//SystemTestDir");
-=======
-		//copyExternalInputDataIntoMOGLiCCWorkspace("C://dev//MOGLiCC//ReikOberrath_Master//application//target//releaseDir//SystemTestDir");
-		//copyExternalInputDataIntoMOGLiCCWorkspace("/home/localci/development/sources/ReikOberrath_Master_final/application/target/releaseDir/SystemTestDir");
-		copyExternalInputDataIntoMOGLiCCWorkspace("C://dev//MOGLiCC//drumdibum//workspaces//standard");
+		copyExternalInputDataIntoMOGLiCCWorkspace("C://dev//MOGLiCC//iks-github//application//target//releaseDir//SystemTestDir");
+		//copyExternalInputDataIntoMOGLiCCWorkspace("/home/localci/development/sources/iks-github/application/target/releaseDir/SystemTestDir");
 		
->>>>>>> 656c84c58ad794ed34c58c30ecc9bf656c921412
-
 		// call functionality under test
 		MOGLiCodeCreator.main(args);
 

@@ -39,7 +39,3 @@ public class ${classDescriptor.simpleName}
 		#end
 '	}
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 656c84c58ad794ed34c58c30ecc9bf656c921412
